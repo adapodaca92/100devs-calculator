@@ -4,46 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/100devs-calculator/css/style.css" />
+    <title>OOP Calculator</title>
   </head>
   <body>
-    <div class="calcContainer">
-      <div class="answerBar">
-        <div class="previousOperand"></div>
-        <div class="currentOperand"></div>
-      </div>
-      <div class="numbers">
-        <div class="numberRow">
-          <span class="calcButton numberButton">7</span>
-          <span class="calcButton numberButton">8</span>
-          <span class="calcButton numberButton">9</span>
-          <span id="dividebutton" class="calcButton operatorButton">/</span>
-        </div>
-        <div class="numberRow">
-          <span class="calcButton numberButton">4</span>
-          <span class="calcButton numberButton">5</span>
-          <span class="calcButton numberButton">6</span>
-          <span id="multiplybutton" class="calcButton operatorButton">*</span>
-        </div>
-        <div class="numberRow">
-          <span class="calcButton numberButton">1</span>
-          <span class="calcButton numberButton">2</span>
-          <span class="calcButton numberButton">3</span>
-          <span id="plusbutton" class="calcButton operatorButton">+</span>
-        </div>
-        <div class="numberRow">
-          <span class="calcButton numberButton">0</span>
-          <span class="calcButton numberButton">.</span>
-          <span id="deletebutton" class="calcButton">del</span>
-          <span id="minusbutton" class="calcButton operatorButton">-</span>
-        </div>
-        <div class="numberRow">
-          <span id="equalsbutton" class="calcButton">=</span>
-          <span id="clearbutton" class="calcButton">c</span>
-        </div>
-      </div>
-    </div>
-    <script src="script.js"></script>
+    <section class="calculator">
+      <input type="text" class="calculator-screen" value="0" disabled />
+      <section class="calculator-buttons">
+        <button type="button" value="7">7</button>
+        <button type="button" value="8">8</button>
+        <button type="button" value="9">9</button>
+        <button type="button" value="/">&divide;</button>
+
+        <button type="button" value="4">4</button>
+        <button type="button" value="5">5</button>
+        <button type="button" value="6">6</button>
+        <button type="button" value="*">&times;</button>
+
+        <button type="button" value="1">1</button>
+        <button type="button" value="2">2</button>
+        <button type="button" value="3">3</button>
+        <button type="button" value="+">&plus;</button>
+
+        <button type="button" value="0">0</button>
+        <button type="button" value=".">.</button>
+        <button type="button" value="-">&minus;</button>
+        <button type="button" value="AC">AC</button>
+
+        <button type="button" value="=">&equals;</button>
+      </section>
+    </section>
   </body>
 </html>
